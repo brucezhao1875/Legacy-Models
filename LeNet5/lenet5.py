@@ -9,7 +9,6 @@ import time
 class LeNet5(nn.Module):
     def __init__(self):
         super(LeNet5, self).__init__()
-
         self.layers = nn.ModuleList([
             nn.Conv2d(1,6,kernel_size=5), # input (batch,1,28,28), output (batch,6,24,24)
             nn.ReLU(),
