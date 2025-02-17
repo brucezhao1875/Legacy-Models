@@ -2,11 +2,11 @@
 
 ## 1. 背景
 
-我的实验在RTX2080上复现了Yan Lecun 的LeNet5。以下是本次实验中的记录。
+在RTX2080上复现了Yan Lecun 的LeNet5。以下是相关记录。
 
 历史上看，LeNet属于CNN的开山之作。在其前后的大致发展如下图：
 
-![lenet_history](E:\PycharmProjects\CNN-Classics\LeNet5\lenet_history.png)
+![lenet_history](lenet_history.png)
 
 本次实验中的准确率与Yann Lecun论文中的数据不相上下（接近99%），但是计算资源变化很大：从每轮2-3天变为20秒，提升了1万倍。
 
@@ -120,7 +120,7 @@ LeNet5是2层（卷积+池化）+2层全连接，激活函数使用ReLU。
 
 ## 7. 代码
 
-参考github：
+https://github.com/brucezhao1875/Legacy-Models/tree/main/LeNet5
 
 ## 8.附录 训练结果曲线
 
