@@ -6,7 +6,7 @@
 
 历史上看，LeNet属于CNN的开山之作。在其前后的大致发展如下图：
 
-![lenet_history](lenet_history.png)
+![lenet_history](imgs/lenet_history.png)
 
 本次实验中的准确率与Yann Lecun论文中的数据不相上下（接近99%），但是计算资源变化很大：从每轮2-3天变为20秒，提升了1万倍。
 
@@ -126,16 +126,16 @@ https://github.com/brucezhao1875/Legacy-Models/tree/main/LeNet5
 
 如下是batch_size=32,训练10个epoch的数据：train loss 始终下降，test loss 在epoch 6之后不再下降。
 所以认为在epoch 6时出现过拟合。
-![img_1.png](img_1.png)
+![img_1.png](imgs/img_1.png)
 
-如下是batch_size=64,训练10个epoch的数据：在epoch 5 时train loss 和 test loss交叉。![img_2.png](img_2.png)
+如下是batch_size=64,训练10个epoch的数据：在epoch 5 时train loss 和 test loss交叉。![img_2.png](imgs/img_2.png)
 
 如下是batch_size=1024,训练10个epoch的数据。batch_size这么大，数据变得平滑了，所以一直没有过拟合现象发生。test_loss和train loss都一直在下降
-![img_3.png](img_3.png)
+![img_3.png](imgs/img_3.png)
 
 如下是batch_size=4096,训练10个epoch的图形，严重欠拟合。
-![img_4.png](img_4.png)
+![img_4.png](imgs/img_4.png)
 
 因为batch_size=4096时10个epoch训练的结果严重欠拟合，因此这里把epoch设为100，看看训练效果。可以看到100个epoch还是欠拟合。最后一轮的数据如下:Epoch [100/100], Train Loss: 0.0591, Test Loss: 0.0704, Test Accuracy: 97.69%, Time: 13.64 seconds
-![img_5.png](img_5.png)
+![img_5.png](imgs/img_5.png)
 
